@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var lineColor = UIColor.red.cgColor
     
     
+    @IBOutlet var textWidthSize: UITextField!
     
     
     override func viewDidLoad() {
@@ -76,5 +77,38 @@ class ViewController: UIViewController {
             imageView.image = nil
         }
     }
+    
+    
+    @IBAction func btnBlackColor(_ sender: UIButton) {
+        lineColor = UIColor.black.cgColor
+
+        
+    }
+    
+    
+    @IBAction func btnRedColor(_ sender: UIButton) {
+        lineColor = UIColor.red.cgColor
+    }
+    
+    @IBAction func btnGreenColor(_ sender: UIButton) {
+        lineColor = UIColor.green.cgColor
+    }
+    
+    
+    @IBAction func btnBlueColor(_ sender: UIButton) {
+        lineColor = UIColor.blue.cgColor
+    }
+    
+    
+    
+    @IBAction func btnWidthSize(_ sender: UIButton) {
+        let widthSize = textWidthSize.text
+        let double = Double(widthSize!)
+        lineSize = CGFloat(double!)
+        
+        
+    }
+    
+    
 }
 
